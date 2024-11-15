@@ -1,0 +1,22 @@
+[data-theme="light"], :root {
+  --brand-light: #DBFF4C;
+  --brand-light-2: #C5E645;
+  --brand-light-3: #A4BF39;
+  --brand-dark: #374013;
+  --brand-dark-2: #6D8026;
+  --color-primary: #A4BF39;
+  --color-secondary: #374013;
+  --color-text: theme("colors.gray.900");
+  --color-text-offset: theme("colors.gray.600");
+  --color-background: #ffffff;
+  --color-background-offset: #C5E645;
+  --color-border: #374013;
+
+  --tw-gradient-stops: var(--brand-light), var(--brand-light-2), var(--brand-light-3);
+  --tw-gradient-to: var(--brand-light-3) bottom right;
+}
+
+.gradient-text {
+  --tw-gradient-stops: var(--brand-light-2), var(--brand-light-3);
+  --tw-gradient-to: var(--brand-light-3) bottom right;
+}
