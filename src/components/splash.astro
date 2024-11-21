@@ -1,15 +1,17 @@
 ---
 import { Image } from "astro:assets";
 import splashImage from "../assets/splash-7.png";
-import HeroImage from "../components/hero-image.astro";
+import HeroImage from "./hero-image.astro";
+import HeroVideo from "./hero-video.astro";
 
 const widths = [300, 600];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
 <section class="relative h-full bg-black">
-  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
-    <HeroImage />
+  <div id="splash-bg-fallback" class="absolute inset-0 opacity-40">
+    <!-- <HeroImage /> -->
+    <HeroVideo />
   </div>
   <div class="relative grid h-full place-items-center sm:grid-cols-2">
     <h2
